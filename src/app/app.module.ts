@@ -7,6 +7,7 @@ import { SidebarComponent } from './view/sidebar/sidebar.component';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
 import { ManageCustomersComponent } from './view/manage-customers/manage-customers.component';
 import { ManageItemComponent } from './view/manage-item/manage-item.component';
+import { ManageOrderComponent } from './view/manage-order/manage-order.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ManageItemComponent } from './view/manage-item/manage-item.component';
     SidebarComponent,
     DashboardComponent,
     ManageCustomersComponent,
-    ManageItemComponent
+    ManageItemComponent,
+    ManageOrderComponent
   ],
   imports: [
     BrowserModule,
