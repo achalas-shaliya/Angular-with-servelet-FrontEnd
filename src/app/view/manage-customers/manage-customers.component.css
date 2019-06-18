@@ -12,8 +12,7 @@
 }
 
 .sidebar-sticky {
-    margin-top: 8%;
-    /* margin-left: 4%; */
+    margin-top: -30px;
 }
 
 .sidebar-sticky ul li {
@@ -246,4 +245,7 @@ section#leftPanel nav ul a li:hover {
 
 #drop .dropdown-item:hover {
     background-color: #0069d9;
+}
+.crud-buttons {
+    margin-right: 7px;
 }
