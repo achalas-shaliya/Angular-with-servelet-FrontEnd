@@ -250,3 +250,11 @@ section#leftPanel nav ul a li:hover {
 .crud-buttons {
     margin-right: 7px;
 }
+
+.ng-invalid:not(form) {
+  border-left: 5px solid red;
+}
+
+.ng-valid:not(form) {
+  border-left: 5px solid green;
+}
