@@ -17,6 +17,7 @@ export class ManageOrderComponent implements OnInit {
   customers: Customer[] = [];
   items: Item[] = [];
   orders: Orders[] = [];
+  selectedOrder: Orders = new Orders('', '', '');
   CID: number = 0;
   names = '';
   address = '';
@@ -64,8 +65,9 @@ export class ManageOrderComponent implements OnInit {
     this.tblorderitem.push(new OrderItem(this.itemcode, this.description, Number(value), (Number(value) * Number(this.unitprice))));
   }
 
-  saveOrder() {
-    this.orderService.saveOrder(new Orders('D107', '2019-09-10', "C010"), this.tblorderitem).subscribe(resp => {
+  saveOrder(oid: string, dates: string) {
+    console.log("ss " + oid + " " + dates + " " + this.CID);
+    this.orderService.saveOrder(this.selectedOrder, this.tblorderitem).subscribe(resp => {
       console.log(resp);
     })
 
